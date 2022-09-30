@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #001822;
+    font-family: 'Chakra Petch', sans-serif;
+    color: aliceblue;
+    letter-spacing: 3px;
+}
+
+ h1{
+    font-size: 2.5em;
+ }
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.planetas{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.sol{
+    max-width: 500px;
+    
+}
+
+.planetas img{
+    width: 150px;
+    margin-bottom: 16px;
+}
+
+#mer{
+    margin-top: -60px;
+    width: 190px;
+}
+
+#nep{
+    margin-top: -16px;
+    width: 170px;
+}
+
+.planeta{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 64px;
+}
+
+.planeta2{
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 64px;
+}
+
+.info{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 64px;
+}
+
+.info p {
+    margin: 32px 0;
+}
+
+button{
+    background-color: #1850bf;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    
+}
+
+
+@media (max-width: 415px) {
+
+    section{
+        align-items: flex-start;
+        margin: 16px 24px 0 ;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    #sol{
+        width: 300px;
+    }
+
+    .planetas{
+        width: 400px;
+        overflow: scroll;
+        padding: 16px 16px;
+    }
+
+    .planeta{
+        flex-direction: column;
+        margin: 0;  
+        align-items: flex-start;
+    }
+
+    .planeta2{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .planeta img{
+        max-width: 250px;
+        margin: 0;
+    }
+
+    .planeta2 img{
+        max-width: 250px;   
+        margin: 0;
+    }
+    
+}
